@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local runtime outputs
+results/eval_data.pt
+results/*.tmp
+results/*.log
+
+# Local editor/system files
+.DS_Store
+Thumbs.db
+~$*
+
+# Optional local environments
+.venv/
+venv/
+env/

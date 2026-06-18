@@ -1,0 +1,7 @@
+﻿Model,Device,Epochs,Batches_per_epoch,Batch_size,Training_seconds,Training_minutes
+DNN,NVIDIA GeForce RTX 3090,150,50,512,47.61,0.7935
+ResNet,NVIDIA GeForce RTX 3090,150,50,512,65.87,1.0978
+GatedMLP,NVIDIA GeForce RTX 3090,150,50,512,55.10,0.9184
+SE-ResNet,NVIDIA GeForce RTX 3090,150,50,512,76.68,1.2781
+PolyNet,NVIDIA GeForce RTX 3090,150,50,512,42.83,0.7139
+PolyNet-Volterra,NVIDIA GeForce RTX 3090,150,50,512,43.54,0.7256

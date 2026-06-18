@@ -1,0 +1,4 @@
+﻿Modulation,Training_setting,Model,Repeats,Frames_per_repeat,BER_mean,BER_std,Active_BER_mean,Active_BER_std,Masked_MSE_mean,Masked_MSE_std,PAPR_Reduction_dB_mean,PAPR_Reduction_dB_std,Mask_Ratio_mean,Mask_Ratio_std,Training_seconds_observed,Final_training_loss
+QPSK,modulation-specific training,PolyNet-Volterra,3,10000,1.45035461e-03,7.04702992e-04,1.45035461e-03,7.04702992e-04,1.05216335e-01,7.10374740e-03,4.0989,0.0041,3.41229687e-01,8.33707598e-05,0.00,
+16-QAM,modulation-specific training,PolyNet-Volterra,3,10000,1.49712766e-01,3.47634378e-03,1.49712766e-01,3.47634378e-03,1.33786355e-01,1.14441994e-03,4.0776,0.0050,3.40889583e-01,1.64221153e-04,97.64,6.53964355e-02
+64-QAM,modulation-specific training,PolyNet-Volterra,3,10000,5.83299291e-01,1.35963218e-02,5.83299291e-01,1.35963218e-02,1.29736437e-01,3.35750125e-03,4.0691,0.0019,3.40412500e-01,4.95268137e-04,96.59,6.36183399e-02
