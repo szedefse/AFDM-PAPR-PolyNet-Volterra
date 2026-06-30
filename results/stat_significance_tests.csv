@@ -1,6 +1,0 @@
-﻿Comparison,Mean_BER_difference,Aggregate_z,Aggregate_p_value,Runs_with_higher_BER_than_PV,Paired_sign_test_p_value
-DNN vs PolyNet-Volterra,1.1038297872e-03,41.9466,<1.0e-300,10/10,1.953e-03
-ResNet vs PolyNet-Volterra,6.7191489362e-04,27.4110,2.030e-165,10/10,1.953e-03
-GatedMLP vs PolyNet-Volterra,3.7510638298e-04,16.1737,7.735e-59,10/10,1.953e-03
-SE-ResNet vs PolyNet-Volterra,4.7638297872e-04,20.1420,3.163e-90,10/10,1.953e-03
-PolyNet vs PolyNet-Volterra,1.5382978724e-04,6.9428,3.844e-12,9/10,2.148e-02

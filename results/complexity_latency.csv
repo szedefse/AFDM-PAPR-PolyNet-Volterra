@@ -1,7 +1,0 @@
-﻿Model,Parameters,Linear_FLOPs_per_frame,Single_frame_CPU_latency_ms,Batch256_CPU_latency_ms_per_frame,Batch256_throughput_frames_per_s,Torch,CPU,Threads
-DNN,330880,655360,0.113273,0.002446,408854.25,2.6.0+cpu,"AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",4
-ResNet,463744,917504,0.204799,0.003943,253619.78,2.6.0+cpu,"AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",4
-GatedMLP,363648,720896,0.147698,0.002963,337515.47,2.6.0+cpu,"AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",4
-SE-ResNet,512896,1015808,0.281647,0.004830,207032.85,2.6.0+cpu,"AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",4
-PolyNet,214656,425984,0.095637,0.002240,446453.87,2.6.0+cpu,"AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",4
-PolyNet-Volterra,165504,327680,0.090517,0.001854,539502.49,2.6.0+cpu,"AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",4
