@@ -712,8 +712,7 @@ def main():
         print("Warning: CUDA is not available. Training-time output will be CPU time, not RTX 3090 GPU time.")
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_dir = os.path.dirname(script_dir)
-    model_save_dir = os.path.join(repo_dir, "saved_models")
+    model_save_dir = os.path.join(script_dir, "saved_models")
     os.makedirs(model_save_dir, exist_ok=True)
 
     # Initialize enabled models based on ENABLE_MODELS config
@@ -746,7 +745,7 @@ def main():
             state = torch.load(weight_path, map_location=device)
             model.load_state_dict(state, strict=True)
             model.to(device).eval()
-        save_dir = os.path.join(repo_dir, "results")
+        save_dir = os.path.join(script_dir, "image")
         os.makedirs(save_dir, exist_ok=True)
         save_gpu_complexity_latency_table(models, device, save_dir)
         return
@@ -899,7 +898,7 @@ def main():
         masked_mse_list = [] # Store Masked MSE for this model
         
         # Pre-generate evaluation data if not already done (done only once for the first model)
-        eval_data_path = os.path.join(repo_dir, "results", "eval_data.pt")
+        eval_data_path = os.path.join(script_dir, "eval_data.pt")
         if 'eval_data' not in locals():
             if os.path.exists(eval_data_path):
                 print(f"Loading pre-generated evaluation data from {eval_data_path}...")
@@ -1191,7 +1190,7 @@ def main():
     plt.ylim(bottom=1e-6)  # Limit lower bound
     plt.tight_layout()
 
-    save_dir = os.path.join(repo_dir, "results")
+    save_dir = os.path.join(script_dir, "image")
     os.makedirs(save_dir, exist_ok=True)
     save_gpu_complexity_latency_table(models, device, save_dir)
 
