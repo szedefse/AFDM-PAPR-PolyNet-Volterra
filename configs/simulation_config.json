@@ -1,0 +1,35 @@
+{
+  "system": {
+    "total_subcarriers_N": 64,
+    "guard_interval_Q": 8,
+    "data_symbol_length_D": 47,
+    "main_modulation": "QPSK",
+    "main_modulation_order": 4,
+    "first_chirp_parameter": "3/128",
+    "second_chirp_parameter": "1/4096",
+    "multipath_components": 3,
+    "maximum_delay_spread": 2,
+    "maximum_doppler_index_main": 1,
+    "channel_model": "doubly selective Rayleigh fading with AWGN"
+  },
+  "masking": {
+    "main_threshold": 0.9,
+    "loss_region": "masked positions only",
+    "loss_function": "masked MSE"
+  },
+  "training": {
+    "training_snr_distribution": "Uniform(5, 25) dB",
+    "testing_snr_points_db": [0, 5, 10, 15, 20, 25],
+    "batch_size": 512,
+    "epochs": 150,
+    "batches_per_epoch": 50,
+    "optimizer": "Adam",
+    "initial_learning_rate": 0.001,
+    "scheduler": "StepLR(step_size=15, gamma=0.5)"
+  },
+  "evaluation": {
+    "main_test_frames_per_snr": 100000,
+    "repeated_monte_carlo_frames_per_run": 10000,
+    "gpu_benchmark_device": "NVIDIA GeForce RTX 3090"
+  }
+}

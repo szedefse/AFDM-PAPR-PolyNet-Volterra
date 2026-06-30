@@ -1,0 +1,51 @@
+{
+  "DNN": {
+    "input_features": 128,
+    "hidden_dimension": 256,
+    "core_architecture": "fully connected MLP",
+    "normalization": "BatchNorm1d",
+    "activation": "ReLU",
+    "saved_weight": "saved_models/DNN.pth"
+  },
+  "ResNet": {
+    "input_features": 128,
+    "hidden_dimension": 256,
+    "residual_blocks": 3,
+    "normalization": "BatchNorm1d",
+    "activation": "ReLU",
+    "saved_weight": "saved_models/ResNet.pth"
+  },
+  "GatedMLP": {
+    "input_features": 128,
+    "hidden_dimension": 256,
+    "core_architecture": "gated fully connected blocks",
+    "normalization": "BatchNorm1d",
+    "activation": "Sigmoid gates",
+    "saved_weight": "saved_models/GatedMLP.pth"
+  },
+  "SE-ResNet": {
+    "input_features": 128,
+    "hidden_dimension": 256,
+    "residual_blocks": 3,
+    "normalization": "BatchNorm1d",
+    "activation": "ReLU",
+    "saved_weight": "saved_models/SE-ResNet.pth"
+  },
+  "PolyNet": {
+    "input_features": 448,
+    "hidden_dimension": 256,
+    "core_architecture": "polynomial feature expansion followed by shallow MLP",
+    "normalization": "LayerNorm",
+    "activation": "Tanh",
+    "saved_weight": "saved_models/PolyNet.pth"
+  },
+  "PolyNet-Volterra": {
+    "input_features": 256,
+    "hidden_dimension": 256,
+    "feature_terms": ["r", "i", "r*P", "i*P"],
+    "core_architecture": "selected first- and third-order Volterra-inspired features followed by shallow MLP",
+    "normalization": "LayerNorm",
+    "activation": "Tanh",
+    "saved_weight": "saved_models/PolyNet-Volterra.pth"
+  }
+}

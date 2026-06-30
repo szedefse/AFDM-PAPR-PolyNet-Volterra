@@ -1,0 +1,7 @@
+﻿Model,Measured_batches,CPU_seconds_per_batch,Estimated_seconds_150epochs,Estimated_minutes_150epochs
+DNN,12,0.017240,129.30,2.15
+ResNet,12,0.016559,124.19,2.07
+GatedMLP,12,0.015856,118.92,1.98
+SE-ResNet,12,0.018456,138.42,2.31
+PolyNet,12,0.013809,103.57,1.73
+PolyNet-Volterra,12,0.013088,98.16,1.64
